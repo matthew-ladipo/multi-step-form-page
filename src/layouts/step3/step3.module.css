@@ -1,0 +1,97 @@
+.adds {
+  margin: 20px 80px;
+}
+.gray {
+  color: rgb(146, 146, 144);
+}
+
+.checkbox {
+  width: 340px;
+  display: flex;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  background-color: #f0f2f3;
+  border: 1px solid #0e049b;
+  padding: 4px 10px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.checkbox span {
+  padding: 0.7rem;
+}
+
+.analysis {
+  color: blueviolet;
+  font-weight: bold;
+  margin-left: auto;
+}
+.navbtn3 {
+  margin: 122px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbtn3 button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #004777;
+  color: white;
+  padding: 0.5rem 2rem;
+  border: 1px solid #f7eff2;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.navbtn3 button a {
+  text-decoration: none;
+  color: #fff;
+}
+.navbtn3 h4 a {
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.navbtn3 button:hover,
+.navbtn3 button:active {
+  background-color: #110ea5;
+  border-color: #0e11a5;
+}
+
+@media screen and (max-width: 750px) {
+  .adds {
+    background-color: #fff;
+    height: 350px;
+    margin: -95px 70px;
+    z-index: 5;
+    width: 320px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .checkbox {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    margin: 4px 0 ;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+  .gray {
+    font-size: 14px;
+  }
+  .title {
+    margin-left: 15px;
+    margin: 0 15px;
+  }
+  .mainadds {
+    position: absolute;
+    margin-top:25px;
+  }
+  /*
+  .navbtn3{
+    gap: 17rem;
+    margin-bottom: 3rem;
+  }
+  .contain3{
+    display: grid;
+  } */
+}

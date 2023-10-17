@@ -1,0 +1,126 @@
+.details {
+  margin-top: 2rem;
+}
+.first {
+  height: 100%;
+  width: 405px;
+}
+
+.contain {
+  display: flex;
+}
+
+.heading {
+  margin-bottom: 2rem;
+  padding: 0 52px;
+}
+.heading h1 {
+  color: #09024d;
+}
+.control {
+  margin-bottom: 1.5rem;
+  margin: 19px 50px;
+}
+.parag {
+  color: #90829b;
+}
+.control label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 9px;
+  color: #0d0347;
+}
+
+.control input {
+  display: block;
+  font: inherit;
+  border-radius: 7px;
+  outline: none;
+  border: 1.5px solid #babcbd;
+  padding: 0.8rem;
+  width: 23rem;
+}
+.control input:hover {
+  border: 1.9px solid #03598b;
+}
+.actions {
+  text-align: right;
+  margin-right: auto;
+  margin: 130px -40px;
+}
+
+.actions button {
+  position: relative;
+
+  font: inherit;
+  cursor: pointer;
+  background-color: #004777;
+  color: white;
+  padding: 0.5rem 2rem;
+  border: 1px solid #f7eff2;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.actions button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #110ea5;
+  border-color: #0e11a5;
+}
+@media screen and (max-width: 750px) {
+  .heading {
+    
+    margin-top: 5px;
+    margin: 25px -25px;
+    height: 55px;
+  }
+  .heading p {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .contain {
+    z-index: 6; 
+  }
+  .form {
+    margin-top: 1rem;
+  }
+  .details {
+    z-index: 6;
+    margin: 0 69px;
+    top: -130px;
+    background: #fcfcfc;
+    height: 369px;
+    width: 20rem;
+    border-radius: 10px;
+    position: absolute;
+  }
+  .actions button {
+    
+  }
+
+  .first {
+    margin-top: 2rem;
+    position: relative;
+  }
+  .contain {
+    display: grid;
+  }
+ 
+  .control input {
+    width: 15rem;
+    margin: 0 -25px;
+  }
+  .control label{
+    margin: 0 -24px;
+  }
+  .actions{
+    margin: 325px  11px;
+    
+  }
+}
