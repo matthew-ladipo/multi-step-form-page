@@ -3,7 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const Step1 = () => {
+const Step1 = (props) => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -47,8 +47,8 @@ const Step1 = () => {
           </form>
         </div>
         <div className={classes.actions}>
-          <a href="http://localhost:3000/step2-page">
-            <button>Next</button>
+          <a href="http://localhost:3000/step2">
+            <button onChange={props.onClick}>Next</button>
           </a>
         </div>
       </div>

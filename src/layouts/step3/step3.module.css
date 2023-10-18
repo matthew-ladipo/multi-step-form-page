@@ -27,7 +27,8 @@
   margin-left: auto;
 }
 .navbtn3 {
-  margin: 122px 0;
+  margin: 122px 1px;
+  width: 365px;
   display: flex;
   justify-content: space-between;
 }
@@ -86,11 +87,11 @@
     position: absolute;
     margin-top:25px;
   }
-  /*
+  
   .navbtn3{
-    gap: 17rem;
-    margin-bottom: 3rem;
+    width: 325px;
   }
+  /*
   .contain3{
     display: grid;
   } */

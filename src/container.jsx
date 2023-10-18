@@ -13,9 +13,9 @@ const Container = () => {
       <div className="form-box">
         <Routes>
           <Route path="/" element={<Step1 />} />
-          <Route path="/step2-page" element={<Step2 />} />
-          <Route path="/step3-page" element={<Step3 />} />
-          <Route path="/step4-page" element={<Step4 />} />
+          <Route path="/step2" element={<Step2 />} />
+          <Route path="/step3" element={<Step3 />} />
+          <Route path="/step4" element={<Step4 />} />
         </Routes>
         
       </div>

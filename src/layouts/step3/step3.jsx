@@ -49,9 +49,9 @@ const Step3 = () => {
           <div className={classes.navbtn3}>
             <h4>
               {" "}
-              <a href="http://localhost:3000/step2-page">Go Back</a>{" "}
+              <a href="http://localhost:3000/step2">Go Back</a>{" "}
             </h4>
-            <a href="http://localhost:3000/step4-page">
+            <a href="http://localhost:3000/step4">
             <button>
             Next
             </button>

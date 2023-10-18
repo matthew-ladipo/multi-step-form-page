@@ -1,14 +1,16 @@
+import { useLocation } from "react-router-dom";
 import classes from "../component/side-nav.module.css";
 
 import { useState } from "react";
 
 const SideContent = () => {
   const [step, setStep] = useState(0);
+  const { pathname } = useLocation();
+  console.log({ pathname });
 
-   function secStep() {
-     setStep(1);
-   }
-
+  //   function secStep () {
+  //    setStep(1);
+  //  }
 
   return (
     <div className={classes.side}>
@@ -16,8 +18,8 @@ const SideContent = () => {
         <section>
           <h3
             style={{
-              backgroundColor: step === 0 ? "white" : step == 1,
-              color: step === 0 ? "blue" : step == 1,
+              backgroundColor: pathname === "/" ? "white" : "",
+              color: pathname === "/" ? "blue" : "",
             }}
           >
             1
@@ -27,8 +29,13 @@ const SideContent = () => {
             <p>YOUR INFO</p>
           </div>
         </section>
-        <section onClick={secStep}>
-          <h3 style={{ backgroundColor: step === 1 ? "white" : step == 0 }}>
+        <section>
+          <h3
+            style={{
+              backgroundColor: pathname.includes(2) ? "white" : "",
+              color: pathname.includes(2) ? "blue" : "",
+            }}
+          >
             2
           </h3>
           <div className={classes.texts}>
@@ -37,7 +44,8 @@ const SideContent = () => {
           </div>
         </section>
         <section>
-          <h3 style={{ backgroundColor: step === 2 ? "white" : step == 0 }}>
+          <h3 style={{ backgroundColor: pathname.includes(3) ? "white" : "",
+              color: pathname.includes(3) ? "blue" : "", }}>
             3
           </h3>
           <div className={classes.texts}>
@@ -46,7 +54,8 @@ const SideContent = () => {
           </div>
         </section>
         <section>
-          <h3 style={{ backgroundColor: step === 4 ? "white" : step == 0 }}>
+          <h3 style={{backgroundColor: pathname.includes(4) ? "white" : "",
+              color: pathname.includes(4) ? "blue" : "", }}>
             4
           </h3>
           <div className={classes.texts}>

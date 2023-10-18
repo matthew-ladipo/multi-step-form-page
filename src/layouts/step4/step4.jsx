@@ -4,8 +4,7 @@ import BackDrop from "../popUp/backdrop";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import classes from '../step4/step4.module.css';
-import svg1 from '../../image/bg-sidebar-desktop.svg'
+import classes from "../step4/step4.module.css";
 
 const Step4 = () => {
   useEffect(() => {
@@ -22,58 +21,56 @@ const Step4 = () => {
     setShowmodal(false);
   }
   return (
-      <div className={classes.total}>
+    <div className={classes.total}>
+      <div className={classes.finishing}>
       <div className={classes.title} data-aos="fade-left">
-          <h1>Finishing Up</h1>
-          <div className={classes.gray}>
-            <p>please Check Well To Comfirm Your Options.</p>
-          </div>
+        <h1>Finishing Up</h1>
+        <div className={classes.gray}>
+          <p>please Check Well To Comfirm Your Options.</p>
         </div>
-        <div>
-          <label className={classes.checkbox} data-aos="fade-up">
-            <span>
-              <h3>ARCADE(Yearly)</h3>
-            </span>
-            <h5 className={classes.analysis}>+500$/yr</h5>
-          </label>
-
-          <label className={classes.checkbox} data-aos="fade-up">
-            <span>
-              <h4>Large Space</h4>
-              <h4>Online Service</h4>
-              <p className={classes.gray}>(Total)</p>
-            </span>
-            <h5 className={classes.analysis}>+35$/m</h5>
-          </label>
-
-          <label className={classes.checkbox} data-aos="fade-up">
-            <span>
-              <h3>Total</h3>
-              <p className={classes.gray}>Per(Year)</p>
-            </span>
-            <h5 className={classes.analysis}>+920$/yr</h5>
-          </label>
-        </div>
-
-        <div className={classes.navbtn3}>
-          <h4 style={{ marginLeft: 45 }}>
-            {" "}
-            <a href="http://localhost:3000/step3-page">Go Back</a>{" "}
-          </h4>
-          <a onClick={confirmChanges}>
-          <button >
-          Confirm
-          </button>
-          </a>
-        </div>
-
-        {showModal && <Step5 onCancel={closeBackdrop} />}
-        {showModal && <BackDrop onCancel={closeBackdrop} />}
       </div>
-    
+      <div>
+        <div className={classes.checkbox} data-aos="fade-up">
+          <span>
+            <p>ARCADE(Yearly)</p>
+          </span>
+          <p className={classes.analysis}>+500$/yr</p>
+        </div>
+
+        <div className={classes.checkbox} data-aos="fade-up">
+          <span>
+            <h4>Large Space</h4>
+          
+            <h4>Online Service</h4>
+            <p className={classes.gray}>(Total)</p>
+          </span>
+          <p className={classes.analysis}>+35$/m</p>
+        </div>
+
+        <div className={classes.checkbox} data-aos="fade-up">
+          <span>
+            <p>Total</p>
+            <p className={classes.gray}>Per(Year)</p>
+          </span>
+          <p className={classes.analysis}>+920$/yr</p>
+        </div>
+      </div>
+      </div>
+
+      <div className={classes.navbtn3}>
+        <h4 style={{ marginLeft: 45 }}>
+          {" "}
+          <a href="http://localhost:3000/step3">Go Back</a>{" "}
+        </h4>
+        <a onClick={confirmChanges}>
+          <button>Confirm</button>
+        </a>
+      </div>
+
+      {showModal && <Step5 onCancel={closeBackdrop} />}
+      {showModal && <BackDrop onCancel={closeBackdrop} />}
+    </div>
   );
 };
 
 export default Step4;
-
-

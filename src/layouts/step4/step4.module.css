@@ -7,6 +7,7 @@
 
 .gray {
   color: rgb(146, 146, 144);
+  font-size: 14px;
 }
 
 .checkbox {
@@ -34,8 +35,10 @@
   margin-left: auto;
 }
 .navbtn3 {
-  margin: 160px 0;
+  position: absolute;
+  margin: 154px 0;
   display: flex;
+  width: 405px;
   justify-content: space-between;
 }
 
@@ -66,19 +69,41 @@
 
 @media screen and (max-width: 750px) {
   .adds {
-    margin-bottom: 7rem;
+    margin-bottom: 1rem;
+  }
+  .finishing{
+    background-color: #fff;
+    width: 330px;
+    height: 330px;
+    margin-left: 39px;
+    margin: -94px 44px;
+    position: absolute;
+    z-index: 6;
+    border-radius: 8px;
+    
   }
   .checkbox {
-    padding: 7px 7px;
+    width: 235px;
+    height: 41px;
+    margin-bottom: 15px;
+    background-color: #f5f6fc;
+    margin: 10px 37px;
+    
   }
   .title {
-    text-align: center;
+    margin: 0 38px;
+  }
+  .title h1{
+    margin-top: 5px;
   }
   .navbtn3 {
-    gap: 17rem;
-    margin-bottom: 3rem;
+    width: 380px;
+    margin: 335px 0;
   }
   .contain4 {
     display: grid;
   }
+  /* .total{
+    margin: 5px;
+  } */
 }

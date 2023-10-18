@@ -105,7 +105,7 @@ const Step2 = () => {
                 {" "}
                 <a href="http://localhost:3000/">Go Back</a>{" "}
               </h4>
-              <a href="http://localhost:3000/step3-page">
+              <a href="http://localhost:3000/step3">
                 <button>Next</button>
               </a>
             </div>

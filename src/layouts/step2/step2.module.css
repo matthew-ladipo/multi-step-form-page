@@ -54,28 +54,28 @@ label span {
   cursor: pointer;
   justify-content: start;
   background-color: #fff;
-  padding: 0.375em .7em;
+  padding: 0.375em 0.7em;
   position: relative;
   width: 80px;
   height: 120px;
-  margin-left: .0625em;
+  margin-left: 0.0625em;
   box-shadow: 0 0 0 0.0625em #b5bfd9;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   color: #3e4963;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  transition: background-color .5s ease;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: background-color 0.5s ease;
 }
-label span svg{
+label span svg {
   margin-right: 30px;
 }
 
-label span h4{
- margin-right: 30px;
- margin-top: 30px;
+label span h4 {
+  margin-right: 30px;
+  margin-top: 30px;
 }
 
-label span h6{
+label span h6 {
   margin-right: 45px;
 }
 
@@ -96,8 +96,8 @@ label:last-child span {
   margin: 3rem 6rem;
   border-radius: 20px;
   background: rgb(243, 240, 240);
-  height: 50px;
-  width: 300px;
+  height: 20px;
+  width: 280px;
 }
 
 .switch {
@@ -147,8 +147,10 @@ label:last-child span {
   border-color: rgb(11, 3, 119);
 }
 .navbtn {
-  margin: 150px 53px;
+  position: absolute;
+  margin: 84px;
   display: flex;
+  width: 355px;
   justify-content: space-between;
 }
 
@@ -179,65 +181,59 @@ label:last-child span {
 }
 
 @media screen and (max-width: 750px) {
-   
-  
+  .details {
+    height: 100%;
+  }
 
   .subdetails {
     position: absolute;
     justify-content: center;
     border-radius: 10px;
     background-color: #fff;
-    width: 325px;
-    height: 420px;
     margin: -175px 0;
+    width: 325px;
     margin-left: 3.8rem;
     z-index: 6;
   }
- .info{
-  margin-top: 25px;
- }
+  .info {
+    margin-top: 10px;
+  }
   .mydict div {
     display: grid;
-    margin: 5px ;
-  }
 
+    width: 32px;
+    /* height: 420px; */
+  }
+  label {
+    margin-bottom: 15px;
+  }
   label span {
-   height: 50px;
-   width: 200px;
-   margin-top: 15px;
-   position: relative;
+    height: 50px;
+    width: 200px;
   }
 
-  label span svg{
+  label span svg {
     margin: -15px 0;
     margin-right: 150px;
     height: 70px;
-    width: 40px;
   }
 
-  label span h4{
+  label span h4 {
     margin-left: 80px;
     margin: -35px 0;
-      
   }
-  label span h6{
+  label span h6 {
     margin-left: 80px;
     margin: 30px 0;
     margin-right: 24px;
   }
-  .toggle{
-    
-    margin: 33px 35px;
-    width: 240px;
+  .toggle {
+    margin: 20px 0;
+    margin-left: 23px;
   }
-  .navbtn{
-    margin: -7px 0;
-    
+  .navbtn {
+    margin-top: 9px;
+    margin: 22px -1px;
+    width: 330px;
   }
 }
-
-
-
-
-
-
