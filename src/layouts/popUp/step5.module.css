@@ -1,38 +1,38 @@
-
-
 .final {
-    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-    border-radius: 6px;
-    background-color: #fff;
-    padding: 1rem ;
-    text-align: center;
-    width: 25rem;
-    z-index: 6;
-    position: fixed;
-    top: 20vh;
-    left: calc(50% - 15rem);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  width: 25rem;
+  z-index: 7;
+  position: fixed;
+  top: 20vh;
+  /* left: calc(50% - 13rem); */
+}
+button {
+  padding: 6px 8px;
+  font-weight: bold;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+
+@media screen and (max-width: 750px) {
+  .final {
+    width: 20rem;
+    height: 300px;
+    margin: 0.8rem 2.1rem ;
   }
-  button{
-    padding: 6px 8px;
-    font-weight: bold;
-    background-color: #fff;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-    
+  .content {
+    margin-top: 20px;
   }
-  button a{
-    text-align: none;
+  .pop {
+    position: relative;
   }
   
-  @media screen and (max-width: 750px){
-    .final{
-        width: 28rem;
-        left: calc(50% - 15rem);
-    }
-     .content{
-    margin-top: 5rem;
-     }
-    .pop{
-        position: relative;
-        margin-right: 5rem;
-     }
-  }
+}
