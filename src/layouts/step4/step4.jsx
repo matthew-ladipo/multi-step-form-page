@@ -5,6 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import classes from "../step4/step4.module.css";
+import { Link } from "react-router-dom";
 
 const Step4 = () => {
   useEffect(() => {
@@ -60,7 +61,8 @@ const Step4 = () => {
       <div className={classes.navbtn3}>
         <h4 style={{ marginLeft: 45 }}>
           {" "}
-          <a href="http://localhost:3000/step3">Go Back</a>{" "}
+          <Link to='/step3'>Go Back</Link>
+          
         </h4>
         <a onClick={confirmChanges}>
           <button>Confirm</button>

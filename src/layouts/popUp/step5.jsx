@@ -1,5 +1,6 @@
 import classes from "./step5.module.css";
 import img1 from "../../image/icon-thank-you.svg";
+import { Link } from "react-router-dom";
 
 const Step5 = (props) => {
   function closeBackdrop() {
@@ -21,9 +22,9 @@ const Step5 = (props) => {
           </p>
         </div>
         <br />
-        <button onClick={closeBackdrop}>
-          <a href="http://localhost:3000">Ok</a>
-        </button>
+        <Link to="/">
+          <button onClick={closeBackdrop}>Ok</button>
+        </Link>
       </div>
     </div>
   );

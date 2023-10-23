@@ -1,6 +1,7 @@
 import classes from "../step3/step3.module.css"
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 
 import { useEffect } from "react";
@@ -49,13 +50,13 @@ const Step3 = () => {
           <div className={classes.navbtn3}>
             <h4>
               {" "}
-              <a href="http://localhost:3000/step2">Go Back</a>{" "}
+              <Link to='/step2'><a>Go Back</a></Link>
             </h4>
-            <a href="http://localhost:3000/step4">
-            <button>
+
+            <Link to='/step4'><button>
             Next
-            </button>
-            </a>
+            </button></Link>
+           
           </div>
         </div>
         </div>

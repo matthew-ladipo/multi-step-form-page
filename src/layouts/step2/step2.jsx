@@ -1,9 +1,10 @@
-import style from  '../step2/step2.module.css';
+import style from "../step2/step2.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
-const Step2 = () => {
+const Step2 = ({ step, setStep }) => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -92,7 +93,7 @@ const Step2 = () => {
           </div>
 
           <div>
-            <div className={style.toggle} >
+            <div className={style.toggle}>
               <h4>Yearly</h4>
               <input className={style.switch} type="checkbox" checked="false" />
               <h4>Monthly</h4>
@@ -102,12 +103,12 @@ const Step2 = () => {
           <div>
             <div className={style.navbtn}>
               <h4>
-                {" "}
-                <a href="http://localhost:3000/">Go Back</a>{" "}
+                <Link to="/">Go Back</Link>
               </h4>
-              <a href="http://localhost:3000/step3">
+              <Link to="/step3">
+                {" "}
                 <button>Next</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -117,4 +118,3 @@ const Step2 = () => {
 };
 
 export default Step2;
-

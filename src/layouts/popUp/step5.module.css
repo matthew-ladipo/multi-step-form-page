@@ -8,7 +8,7 @@
   z-index: 7;
   position: fixed;
   top: 20vh;
-  /* left: calc(50% - 13rem); */
+  left: calc(50% - 13rem); 
 }
 button {
   padding: 6px 8px;

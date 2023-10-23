@@ -17,7 +17,6 @@ const Container = () => {
           <Route path="/step3" element={<Step3 />} />
           <Route path="/step4" element={<Step4 />} />
         </Routes>
-        
       </div>
     </div>
   );

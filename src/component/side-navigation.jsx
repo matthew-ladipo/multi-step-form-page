@@ -1,17 +1,14 @@
 import { useLocation } from "react-router-dom";
 import classes from "../component/side-nav.module.css";
 
-import { useState } from "react";
+// import { useState } from "react";
 
-const SideContent = () => {
-  const [step, setStep] = useState(0);
-  const { pathname } = useLocation();
+const SideContent = (props) => {
+  // const [step, setStep] = useState(0);
+   const { pathname } = useLocation();
   console.log({ pathname });
 
-  //   function secStep () {
-  //    setStep(1);
-  //  }
-
+  
   return (
     <div className={classes.side}>
       <div className={classes.sidenav}>
