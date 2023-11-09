@@ -223,8 +223,7 @@ label:last-child span {
     margin: -35px 0;
   }
   label span h6 {
-    margin-left: 80px;
-    margin: 30px 0;
+   margin: 40px 20px;
     margin-right: 24px;
   }
   .toggle {
