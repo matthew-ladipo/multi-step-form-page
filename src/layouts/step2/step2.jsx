@@ -94,7 +94,7 @@ const [choose, setChoose] = useState(false)
                     </g>
                   </svg>
                   <br />
-                  <h4 style={{ marginRight: 50 }}>Pro</h4>
+                  <h4>Pro</h4>
                   <h6>$15/yr</h6>
                 </span>
               </label>
