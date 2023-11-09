@@ -1,10 +1,19 @@
 import style from "../step2/step2.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Step2 = ({ step, setStep }) => {
+const Step2 = () => {
+
+const [select, setSelect] = useState(false)
+
+    function switchPlans () {
+       setSelect(prev => !prev)
+    } 
+const [choose, setChoose] = useState(false)  
+
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -20,7 +29,7 @@ const Step2 = ({ step, setStep }) => {
           <div className={style.mydict}>
             <div>
               <label>
-                <input type="radio" name="radio" />
+                <input type="radio" name="radio" value={choose} onChange={() => setChoose(true)}/>
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +52,7 @@ const Step2 = ({ step, setStep }) => {
                 </span>
               </label>
               <label>
-                <input type="radio" name="radio" />
+              <input type="radio" name="radio" value={choose} onChange={() => setChoose(true)}/>
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +75,7 @@ const Step2 = ({ step, setStep }) => {
                 </span>
               </label>
               <label>
-                <input type="radio" name="radio" />
+              <input type="radio" name="radio" value={choose} onChange={() => setChoose(true)}/>
 
                 <span>
                   <svg
@@ -94,9 +103,9 @@ const Step2 = ({ step, setStep }) => {
 
           <div>
             <div className={style.toggle}>
-              <h4>Yearly</h4>
-              <input className={style.switch} type="checkbox" checked="false" />
-              <h4>Monthly</h4>
+              <h4 style={{ color: select &&  'gray'  }}>Yearly</h4>
+              <input className={style.switch} type="checkbox"  onClick={switchPlans} />
+              <h4 style={{ color: !select  &&  'gray'  }}>Monthly</h4>
             </div>
           </div>
 
