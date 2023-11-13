@@ -5,7 +5,7 @@
   /* margin: 5px; */
   margin-top: 5rem;
 }
-.subdetails{
+.subdetails {
   margin: 0 14px;
 }
 .info {
@@ -186,7 +186,6 @@ label:last-child span {
 @media screen and (max-width: 750px) {
   .details {
     height: 100%;
-   
   }
 
   .subdetails {
@@ -229,6 +228,8 @@ label:last-child span {
   }
   label span h6 {
     margin: 40px 20px;
+    margin: 40px 20px;
+
     margin-right: 24px;
   }
   .toggle {
@@ -236,7 +237,6 @@ label:last-child span {
     margin-left: 23px;
   }
   .navbtn {
-   
     margin: 55px -1px;
     width: 330px;
   }

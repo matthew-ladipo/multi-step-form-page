@@ -94,8 +94,13 @@ const [choose, setChoose] = useState(false)
                     </g>
                   </svg>
                   <br />
+<<<<<<< HEAD
                   <h4 >Pro</h4>
                   <h6 >$15/yr</h6>
+=======
+                  <h4>Pro</h4>
+                  <h6>$15/yr</h6>
+>>>>>>> d5b43c8513bde9774ce3fc9ac9b8da6aa73e8cc8
                 </span>
               </label>
             </div>
