@@ -60,7 +60,7 @@ label span {
   padding: 0.375em 0.7em;
   position: relative;
   width: 80px;
-  height: 120px;
+  height: 100%;
   margin-left: 0.0622em;
   box-shadow: 0 0 0 0.0625em #b5bfd9;
   letter-spacing: 0.05em;
@@ -81,7 +81,10 @@ label span h4 {
 label span h6 {
   margin-right: 45px;
 }
-
+label span p{
+  font-size: 9px;
+  margin-right: 13px;
+}
 /* label:first-child span {
   border-radius: .375em 0 0 .375em;
 }
@@ -189,6 +192,7 @@ label:last-child span {
   }
 
   .subdetails {
+    padding: 4px;
     position: relative;
     justify-content: center;
     border-radius: 10px;
@@ -196,15 +200,14 @@ label:last-child span {
     width: 325px;
     /* margin-left: 3.8rem; */
     z-index: 6;
-    top: -320px;
-    height: 67vh;
+    top: -334px;
+    height: 70vh;
   }
   .info {
     margin-top: 10px;
   }
   .mydict div {
     display: grid;
-
     width: 32px;
     /* height: 420px; */
   }
@@ -212,12 +215,12 @@ label:last-child span {
     margin-bottom: 15px;
   }
   label span {
-    height: 50px;
+    height: 60px;
     width: 200px;
   }
 
   label span svg {
-    margin: -15px 0;
+    margin: -13px 0;
     margin-right: 150px;
     height: 70px;
   }
@@ -232,12 +235,19 @@ label:last-child span {
 
     margin-right: 24px;
   }
+  label span p{
+    position: relative;
+     height: 10px;
+     width: 80px;
+     margin-left: 60px;
+     top: -37px;
+  }
   .toggle {
-    margin: 20px 0;
+    margin: 10px 0;
     margin-left: 23px;
   }
   .navbtn {
-    margin: 55px -1px;
+    margin: 30px -1px;
     width: 330px;
   }
 }

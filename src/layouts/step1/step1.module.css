@@ -116,6 +116,10 @@
   .control label{
     margin: 0 -24px;
   }
+  .control p{
+    margin: 0 -23px;
+    width: 100px;
+  }
   .actions{
     margin: 100px  -115px;
     

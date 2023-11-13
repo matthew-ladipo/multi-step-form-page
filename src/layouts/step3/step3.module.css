@@ -41,6 +41,7 @@
   width: 365px;
   display: flex;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 .navbtn3 button {

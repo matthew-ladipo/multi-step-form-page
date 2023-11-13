@@ -5,14 +5,38 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Step2 = () => {
+  // const monthPrices = ['$9/yr', '$12/yr', '$15/yr']
+  // const yearPrices = ['$90/yr', '$120/yr', '$150/yr']
 
-const [select, setSelect] = useState(false)
+  const [billingType, setBillingType] = useState(false);
+  const [choose, setChoose] = useState(false);
 
-    function switchPlans () {
-       setSelect(prev => !prev)
-    } 
-const [choose, setChoose] = useState(false)  
+  function switchPlans(e) {
+    setBillingType(e.target.checked);
+  }
 
+  const renderBillingType = () => {
+    switch (billingType) {
+      case false:
+        return {
+          planPrice: {
+            price1: "$90/yr",
+            price2: "$120/yr",
+            price3: "$150/yr",
+          },
+        };
+      case true:
+        return {
+          planPrice: {
+            price1: "$9/yr",
+            price2: "$12/yr",
+            price3: "$15/yr",
+          },
+        };
+      default:
+        break;
+    }
+  };
 
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -29,7 +53,12 @@ const [choose, setChoose] = useState(false)
           <div className={style.mydict}>
             <div>
               <label>
-                <input type="radio" name="radio" value={choose} onChange={() => setChoose(true)}/>
+                <input
+                  type="radio"
+                  name="radio"
+                  value={choose}
+                  onChange={() => setChoose(true)}
+                />
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -48,11 +77,17 @@ const [choose, setChoose] = useState(false)
                   </svg>
                   <br />
                   <h4>Arcade</h4>
-                <h6 >$9/yr</h6>
+                  <h6>{renderBillingType().planPrice.price1}</h6>
+                  <p>{billingType ? "2 months free" : ""}</p>
                 </span>
               </label>
               <label>
-              <input type="radio" name="radio" value={choose} onChange={() => setChoose(true)}/>
+                <input
+                  type="radio"
+                  name="radio"
+                  value={choose}
+                  onChange={() => setChoose(true)}
+                />
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,11 +106,17 @@ const [choose, setChoose] = useState(false)
                   </svg>
                   <br />
                   <h4>Advance</h4>
-                  <h6 >$12/yr</h6>
+                  <h6>{renderBillingType().planPrice.price2}</h6>
+                  <p>{billingType ? "2 months free" : ""}</p>
                 </span>
               </label>
               <label>
-              <input type="radio" name="radio" value={choose} onChange={() => setChoose(true)}/>
+                <input
+                  type="radio"
+                  name="radio"
+                  value={choose}
+                  onChange={() => setChoose(true)}
+                />
 
                 <span>
                   <svg
@@ -94,9 +135,9 @@ const [choose, setChoose] = useState(false)
                     </g>
                   </svg>
                   <br />
-                  <h4 >Pro</h4>
-                  <h6 >$15/yr</h6>
-                
+                  <h4>Pro</h4>
+                  <h6>{renderBillingType().planPrice.price3}</h6>
+                  <p>{billingType ? "2 months free" : ""}</p>
                 </span>
               </label>
             </div>
@@ -104,17 +145,23 @@ const [choose, setChoose] = useState(false)
 
           <div>
             <div className={style.toggle}>
-              <h4 style={{ color: select &&  'gray'  }}>Yearly</h4>
-              <input className={style.switch} type="checkbox"  onClick={switchPlans} />
-              <h4 style={{ color: !select  &&  'gray'  }}>Monthly</h4>
+              <h4 style={{ color: billingType && "gray" }}>Yearly</h4>
+              <input
+                className={style.switch}
+                type="checkbox"
+                onChange={switchPlans}
+              />
+              <h4 style={{ color: !billingType && "gray" }}>Monthly</h4>
             </div>
           </div>
 
           <div>
             <div className={style.navbtn}>
-              <h4>
-                <Link to="/">Go Back</Link>
-              </h4>
+              <h5>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                  Go Back
+                </Link>
+              </h5>
               <Link to="/step3">
                 {" "}
                 <button>Next</button>

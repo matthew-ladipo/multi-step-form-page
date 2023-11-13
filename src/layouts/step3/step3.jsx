@@ -48,15 +48,14 @@ const Step3 = () => {
             <h5 className={classes.analysis}>+50$/m</h5>
           </label>
           <div className={classes.navbtn3}>
-            <h5>
+            <h5 >
               {" "}
-              <Link to='/step2'><a>Go Back</a></Link>
+              <Link to='/step2' style={{ textDecoration: 'none' }}><a>Go Back</a></Link>
             </h5>
 
             <Link to='/step4'><button>
             Next
             </button></Link>
-           
           </div>
         </div>
         </div>
