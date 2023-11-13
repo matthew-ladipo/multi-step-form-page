@@ -96,8 +96,7 @@ const [choose, setChoose] = useState(false)
                   <br />
                   <h4 >Pro</h4>
                   <h6 >$15/yr</h6>
-                  <h4>Pro</h4>
-                  <h6>$15/yr</h6>
+                
                 </span>
               </label>
             </div>
