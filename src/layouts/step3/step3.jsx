@@ -14,44 +14,44 @@ const Step3 = () => {
   return (
       <div className={classes.adds}>
         <div className={classes.mainadds}>
-        <div className={classes.title} data-aos="fade-left">
+        <div className={classes.title} >
           <h1>Pick Add-Ons</h1>
           <div className={classes.gray}>
             <p>please provide your name,email and password.</p>
           </div>
         </div>
-        <div>
-          <div className={classes.checkbox} data-aos="fade-right">
+        <div className={classes.select}>
+          <label className={classes.checkbox} >
             <input type="checkbox" />
-            <span>
-              <h4>Online Service</h4>
+            <div className={classes.span}>
+              <h5>Online Service</h5>
               <p className={classes.gray}>Access to online game</p>
-            </span>
+            </div >
             <h5 className={classes.analysis}>+10$/m</h5>
-          </div>
+          </label>
 
-          <div className={classes.checkbox} data-aos="fade-right">
+          <label className={classes.checkbox} >
             <input type="checkbox" />
-            <span>
-              <h4>Large Space</h4>
+            <div className={classes.span}>
+              <h5>Large Space</h5>
               <p className={classes.gray}>Extract 1TB of Cloud space</p>
-            </span>
+            </div >
             <h5 className={classes.analysis}>+25$/m</h5>
-          </div>
+          </label>
 
-          <div className={classes.checkbox} data-aos="fade-right">
+          <label className={classes.checkbox} >
             <input type="checkbox" />
-            <span>
-              <h4>Customizable Profile</h4>
+            <div className={classes.span}>
+              <h5>Customizable Profile</h5>
               <p className={classes.gray}>custom theme on your Profile</p>
-            </span>
+            </div >
             <h5 className={classes.analysis}>+50$/m</h5>
-          </div>
+          </label>
           <div className={classes.navbtn3}>
-            <h4>
+            <h5>
               {" "}
               <Link to='/step2'><a>Go Back</a></Link>
-            </h4>
+            </h5>
 
             <Link to='/step4'><button>
             Next

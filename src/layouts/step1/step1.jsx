@@ -8,36 +8,26 @@ const Step1 = () => {
     name: "",
     email: "",
     password: "",
-  }); 
+  });
 
   const handleInput = (event) => {
     setFormValue({ ...value, [event.target.name]: event.target.value });
   };
 
   const [error, setErrors] = useState({});
-  // const [nextState, setNetState] = useState() 
 
-   const next = useNavigate(false);
+  const next = useNavigate(false);
 
- 
-  
-    
-    
-
-  // };
   function defaultCall(event) {
     event.preventDefault();
     setErrors(Validate(value));
-    if (value.name && value.email) {
-      next('/step2')
-    } else {
-      alert('please input fields')
+    if (value.name && value.email && value.password) {
+      next("/step2");
+    } 
+    else {
+      alert("please input fields");
     }
   }
-
-  // function handleClick () {
-  //   next('/step2')
-  // }
 
   return (
     <div className={classes.contain}>
@@ -59,10 +49,11 @@ const Step1 = () => {
                 id="title"
                 placeholder="e.g matthew"
                 onChange={handleInput}
+                 style={{  }}
               />
 
               {error.name && (
-                <p style={{ color: "red", fontSize: "10px" }}>{error.name}</p>
+                <p style={{ color: "red", fontSize: "10px", fontWeight: 400 }}>{error.name}</p>
               )}
             </div>
             <div className={classes.control}>
@@ -95,7 +86,7 @@ const Step1 = () => {
               )}
             </div>
             <div className={classes.actions}>
-              <button >Next</button>
+              <button>Next</button>
             </div>
           </form>
         </div>
@@ -105,53 +96,3 @@ const Step1 = () => {
 };
 
 export default Step1;
-
-/* import React, { useState } from 'react';
-
-function MyForm() {
-  const [formData, setFormData] = useState({
-    // Define your form fields here
-    username: '',
-    password: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add form validation logic here
-    if (formData.username && formData.password) {
-      // Validation successful
-      // Redirect to another page
-      window.location.href = '/another-page'; // You can use your preferred routing method here
-    } else {
-      // Display validation errors or handle validation failure
-    }
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="username"
-        value={formData.username}
-        onChange={handleChange}
-        placeholder="Username"
-      />
-      <input
-        type="password"
-        name="password"
-        value={formData.password}
-        onChange={handleChange}
-        placeholder="Password"
-      />
-      <button type="submit">Submit</button>
-    </form>
-  );
-}
-
-export default MyForm;
-*/

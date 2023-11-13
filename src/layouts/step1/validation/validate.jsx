@@ -16,6 +16,8 @@ const Validate = (value) => {
     error.password = "password required";
   } else if (value.password.length < 8) {
     error.password = "password must be more 8 characters";
+  } else if (!value.password){
+    error.password = 'password field required'
   }
 
   return error;

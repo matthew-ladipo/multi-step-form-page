@@ -1,21 +1,19 @@
 .side {
+  margin: 15px;
   text-align: center;
-  margin-right: auto;
-  width: 19rem;
-  margin: 10px;
-  height: 568px;
+  width: 15rem;
+  height: 540px;
   border-radius: 10px;
-  position: relative;
   background-image: url("../image//bg-sidebar-desktop.svg");
 }
 .sidenav {
-  top: 30px;
-  position: absolute;
+  top: 40px;
+  margin-left: 10px;
 }
 
 .sidenav section {
-  width: 100%;
-  margin: 0 25px;
+  
+  margin: 30px 25px;
   display: flex;
   margin-bottom: 2rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -31,10 +29,7 @@ p {
   margin-right: 0.7rem;
   border: 1px solid #f7eff2;
 }
-/* .sidenav .first h3 {
-  color: #0815ce;
-  background: #fcfbfb;
-}   */
+
 .texts {
   color: #fff;
 }
@@ -58,17 +53,17 @@ p {
   .side {
     z-index: 5;
     margin: 15px 50px;
-    width: 23rem;
-    height: 10rem;
-    background-image: url("../image/bg-sidebar-mobile.svg");
+    background-image: none;
     border-radius: 1px;
+    height: 50vh;
+    
   }
 
   .sidenav {
-    margin: -20px 0;
+    margin: 1px 0;
     display: flex;
     justify-content: center;
-    padding-left: 2.8rem;
+    
   }
 
   .sidenav section {

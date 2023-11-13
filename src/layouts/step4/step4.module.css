@@ -1,8 +1,8 @@
-.title {
+/* .title {
   margin-left: 2.7rem;
-}
-.total {
-  margin: 1px 20px;
+} */
+.finishing {
+  margin: 35px 66px;
 }
 
 .gray {
@@ -11,7 +11,6 @@
 }
 
 .checkbox {
-  margin-left: 3rem;
   width: 340px;
   height: 50px;
   display: flex;
@@ -35,10 +34,10 @@
   margin-left: auto;
 }
 .navbtn3 {
-  position: absolute;
-  margin: 154px 0;
+  /* position: absolute; */
+  margin: 75px -40px;
   display: flex;
-  width: 405px;
+  width: 400px;
   justify-content: space-between;
 }
 
@@ -71,37 +70,43 @@
   .adds {
     margin-bottom: 1rem;
   }
-  .finishing{
-    background-color: #fff;
+  .total{
+    top: -260px;
+    position: relative;
     width: 330px;
-    height: 330px;
-    margin-left: 39px;
-    margin: -94px 44px;
-    position: absolute;
+    height: 55vh;
     z-index: 6;
+    margin-left: 5px;
+    background-color: #fff;
     border-radius: 8px;
-    
+  }
+  .finishing{
+   width: 250px;
+   margin: 0 30px;
+   padding: 10px;
   }
   .checkbox {
     width: 235px;
     height: 41px;
     margin-bottom: 15px;
     background-color: #f5f6fc;
-    margin: 10px 37px;
-    
+    margin: 10px 5px;
   }
   .title {
-    margin: 0 38px;
+    margin: 13px 5px;
   }
   .title h1{
     margin-top: 5px;
   }
   .navbtn3 {
-    width: 380px;
-    margin: 335px 0;
+    width: 370px;
+  margin: 100px -75px;
+    
+    
   }
   .contain4 {
     display: grid;
+
   }
   /* .total{
     margin: 5px;

@@ -1,14 +1,11 @@
 import { useLocation } from "react-router-dom";
 import classes from "../component/side-nav.module.css";
 
-// import { useState } from "react";
-
 const SideContent = (props) => {
   // const [step, setStep] = useState(0);
-   const { pathname } = useLocation();
+  const { pathname } = useLocation();
   console.log({ pathname });
 
-  
   return (
     <div className={classes.side}>
       <div className={classes.sidenav}>
@@ -41,8 +38,12 @@ const SideContent = (props) => {
           </div>
         </section>
         <section>
-          <h3 style={{ backgroundColor: pathname.includes(3) ? "white" : "",
-              color: pathname.includes(3) ? "blue" : "", }}>
+          <h3
+            style={{
+              backgroundColor: pathname.includes(3) ? "white" : "",
+              color: pathname.includes(3) ? "blue" : "",
+            }}
+          >
             3
           </h3>
           <div className={classes.texts}>
@@ -51,8 +52,12 @@ const SideContent = (props) => {
           </div>
         </section>
         <section>
-          <h3 style={{backgroundColor: pathname.includes(4) ? "white" : "",
-              color: pathname.includes(4) ? "blue" : "", }}>
+          <h3
+            style={{
+              backgroundColor: pathname.includes(4) ? "white" : "",
+              color: pathname.includes(4) ? "blue" : "",
+            }}
+          >
             4
           </h3>
           <div className={classes.texts}>

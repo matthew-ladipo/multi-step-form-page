@@ -1,18 +1,17 @@
-.details {
-  margin-top: 2rem;
-}
+
 .first {
   height: 100%;
   width: 405px;
 }
 
-.contain {
-  display: flex;
-}
+ .contain {
+  margin-top: 4rem;
+  margin-right: 100px;
+} 
 
 .heading {
   margin-bottom: 2rem;
-  padding: 0 52px;
+  margin-left: 47px;
 }
 .heading h1 {
   color: #09024d;
@@ -39,7 +38,7 @@
   outline: none;
   border: 1.5px solid #babcbd;
   padding: 0.8rem;
-  width: 23rem;
+  width: 21rem;
 }
 .control input:hover {
   border: 1.9px solid #03598b;
@@ -47,12 +46,11 @@
 .actions {
   text-align: right;
   margin-right: auto;
-  margin: 130px -40px;
+  margin: 100px -10px;
 }
 
 .actions button {
   position: relative;
-
   font: inherit;
   cursor: pointer;
   background-color: #004777;
@@ -75,38 +73,37 @@
 }
 @media screen and (max-width: 750px) {
   .heading {
-    
     margin-top: 5px;
-    margin: 25px -25px;
-    height: 55px;
+    margin: 25px 0;
+    width: 250px;
+    margin-left: 28px;
+    /* height: 50px; */
+
+  }
+  .first{
+    width: 200px;
   }
   .heading p {
-    font-size: 15px;
-    margin-bottom: 5px;
+    font-size: 13px;
+    width: 200px;
+    /* margin-bottom: 5px; */
   }
   .contain {
-    z-index: 6; 
+    z-index: 6;
+    margin: 0 10px;
+    top: -230px;
+    background: #eceeee;
+    width: 20rem;
+    border-radius: 10px;
+    position: relative;
   }
   .form {
     margin-top: 1rem;
-  }
-  .details {
-    z-index: 6;
-    margin: 0 69px;
-    top: -130px;
-    background: #fcfcfc;
-    height: 369px;
-    width: 20rem;
-    border-radius: 10px;
-    position: absolute;
-  }
-  .actions button {
     
   }
-
-  .first {
-    margin-top: 2rem;
-    position: relative;
+  .details {
+   height: 60vh;
+   width: 200px;
   }
   .contain {
     display: grid;
@@ -120,7 +117,8 @@
     margin: 0 -24px;
   }
   .actions{
-    margin: 315px  11px;
+    margin: 100px  -90px;
+   
     
   }
 }

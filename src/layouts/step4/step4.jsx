@@ -24,51 +24,50 @@ const Step4 = () => {
   return (
     <div className={classes.total}>
       <div className={classes.finishing}>
-      <div className={classes.title} data-aos="fade-left">
-        <h1>Finishing Up</h1>
-        <div className={classes.gray}>
-          <p>please Check Well To Comfirm Your Options.</p>
+        <div className={classes.title} data-aos="fade-left">
+          <h1>Finishing Up</h1>
+          <div className={classes.gray}>
+            <p>please Check Well To Comfirm Your Options.</p>
+          </div>
         </div>
-      </div>
-      <div>
-        <div className={classes.checkbox} data-aos="fade-up">
-          <span>
-            <p>ARCADE(Yearly)</p>
-          </span>
-          <p className={classes.analysis}>+500$/yr</p>
-        </div>
+        <div>
+          <div className={classes.checkbox} data-aos="fade-up">
+            <span>
+              <p>ARCADE(Yearly)</p>
+            </span>
+            <p className={classes.analysis}>+500$/yr</p>
+          </div>
 
-        <div className={classes.checkbox} data-aos="fade-up">
-          <span>
-            <h4>Large Space</h4>
-          
-            <h4>Online Service</h4>
-            <p className={classes.gray}>(Total)</p>
-          </span>
-          <p className={classes.analysis}>+35$/m</p>
-        </div>
+          <div className={classes.checkbox} data-aos="fade-up">
+            <span>
+              <h4>Large Space</h4>
 
-        <div className={classes.checkbox} data-aos="fade-up">
-          <span>
-            <p>Total</p>
-            <p className={classes.gray}>Per(Year)</p>
-          </span>
-          <p className={classes.analysis}>+920$/yr</p>
+              <h4>Online Service</h4>
+              <p className={classes.gray}>(Total)</p>
+            </span>
+            <p className={classes.analysis}>+35$/m</p>
+          </div>
+
+          <div className={classes.checkbox} data-aos="fade-up">
+            <span>
+              <p>Total</p>
+              <p className={classes.gray}>Per(Year)</p>
+            </span>
+            <p className={classes.analysis}>+920$/yr</p>
+          </div>
         </div>
-      </div>
-      </div>
+      
 
       <div className={classes.navbtn3}>
         <h4 style={{ marginLeft: 45 }}>
           {" "}
-          <Link to='/step3'>Go Back</Link>
-          
+          <Link to="/step3">Go Back</Link>
         </h4>
         <a onClick={confirmChanges}>
           <button>Confirm</button>
         </a>
       </div>
-
+      </div>
       {showModal && <Step5 onCancel={closeBackdrop} />}
       {showModal && <BackDrop onCancel={closeBackdrop} />}
     </div>
