@@ -10,11 +10,14 @@
 } 
 
 .heading {
-  margin-bottom: 2rem;
+  margin-bottom: 1.3rem;
   margin-left: 47px;
 }
 .heading h1 {
   color: #09024d;
+}
+.heading .parag{
+  font-family: 13px;
 }
 .control {
   margin-bottom: 1.5rem;
@@ -27,7 +30,6 @@
   display: block;
   font-size: 14px;
   font-weight: bold;
-  margin: 0 9px;
   color: #0d0347;
 }
 
@@ -39,6 +41,7 @@
   border: 1.5px solid #babcbd;
   padding: 0.8rem;
   width: 21rem;
+  height: 10px;
 }
 .control input:hover {
   border: 1.9px solid #03598b;
@@ -90,19 +93,21 @@
   }
   .contain {
     z-index: 6;
-    margin: 0 10px;
-    top: -230px;
-    background: #eceeee;
+    margin: 0 -35px;
+    top: -20px;
+    background: #fbfdfd;
     width: 20rem;
+    height: 350px;
     border-radius: 10px;
     position: relative;
+    box-shadow: 0 5px 7px rgba(3, 3, 3, 0.2);
   }
   .form {
     margin-top: 1rem;
-    
+    height: 130px;
   }
   .details {
-   height: 60vh;
+   height: 50vh;
    width: 200px;
   }
   .contain {
@@ -121,7 +126,7 @@
     width: 100px;
   }
   .actions{
-    margin: 100px  -115px;
-    
+    margin: 180px  -115px;
+   
   }
 }

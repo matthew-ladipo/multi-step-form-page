@@ -6,19 +6,21 @@
   margin-top: 5rem;
 }
 .subdetails {
-  margin: 0 14px;
+  margin: 0 47px;
 }
 .info {
-  margin: 15px -24px;
+  margin: 15px -21px;
 }
 .info p {
   margin-top: 10px;
   margin: 0 48px;
-  font-size: 31px;
+  font-size: 30px;
   color: #0e0242;
 }
 .info h4 {
   margin: 4px 48px;
+  font-size: 13px;
+  font-weight: 500;
   color: rgb(95, 97, 97);
 }
 h6 {
@@ -28,10 +30,10 @@ h6 {
 /* selects */
 .mydict div {
   display: flex;
-  margin-left: 30px;
-  margin-top: 2.5rem;
-  width: 390px;
-  justify-content: space-between;
+  margin-left: 11px;
+  margin-top: 2rem;
+  width: 392px;
+  justify-content: space-evenly;
 }
 
 .mydict input[type="radio"] {
@@ -76,6 +78,7 @@ label span svg {
 label span h4 {
   margin-right: 30px;
   margin-top: 30px;
+  font-size: 14px;
 }
 
 label span h6 {
@@ -85,25 +88,14 @@ label span p{
   font-size: 9px;
   margin-right: 13px;
 }
-/* label:first-child span {
-  border-radius: .375em 0 0 .375em;
-}
-
-label:last-child span {
-  border-radius: 0 .375em .375em 0;
-}  */
-
-/* selects */
-/* check */
-
 .toggle {
   display: flex;
   justify-content: space-between;
-  margin: 3rem 6rem;
+  margin: 3rem 6.5rem;
   border-radius: 20px;
-  background: rgb(243, 240, 240);
   height: 20px;
-  width: 280px;
+  width: 170px;
+  font-weight: 500;
 }
 
 .switch {
@@ -131,7 +123,6 @@ label:last-child span {
   height: 12px;
   width: 13px;
   margin: 3.4px 4px;
-
   cursor: pointer;
   border: 1px solid rgba(100, 116, 139, 0.527);
   border-radius: 9999px;
@@ -154,10 +145,11 @@ label:last-child span {
 }
 .navbtn {
   position: absolute;
-  margin: 47px;
+  margin: 47px 30px;
   display: flex;
-  width: 365px;
+  width: 353px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbtn button {
@@ -165,7 +157,7 @@ label:last-child span {
   cursor: pointer;
   background-color: #004777;
   color: white;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1.7rem;
   border: 1px solid #f7eff2;
   border-radius: 4px;
   font-weight: bold;
@@ -189,6 +181,8 @@ label:last-child span {
 @media screen and (max-width: 750px) {
   .details {
     height: 100%;
+    margin: 0 -90px;
+    width: 100%;
   }
 
   .subdetails {
@@ -198,10 +192,10 @@ label:last-child span {
     border-radius: 10px;
     background-color: #fff;
     width: 325px;
-    /* margin-left: 3.8rem; */
     z-index: 6;
-    top: -334px;
-    height: 70vh;
+    top: -22px;
+    height: 60vh;
+    box-shadow: 0 5px 7px rgba(3, 3, 3, 0.2);
   }
   .info {
     margin-top: 10px;
@@ -213,16 +207,18 @@ label:last-child span {
   }
   label {
     margin-bottom: 15px;
+    margin-left: 274px;
+    
   }
   label span {
-    height: 60px;
-    width: 200px;
+    height: 58px;
+    width: 250px;
   }
 
   label span svg {
-    margin: -13px 0;
+    margin: -9px 0;
     margin-right: 150px;
-    height: 70px;
+    height: 60px;
   }
 
   label span h4 {
@@ -239,15 +235,15 @@ label:last-child span {
     position: relative;
      height: 10px;
      width: 80px;
-     margin-left: 60px;
+     margin-left: 85px;
      top: -37px;
   }
   .toggle {
     margin: 10px 0;
-    margin-left: 23px;
+    margin-left: 75px;
   }
   .navbtn {
-    margin: 30px -1px;
+    margin: 90px -1px;
     width: 330px;
   }
 }

@@ -135,9 +135,11 @@ const Step2 = () => {
                     </g>
                   </svg>
                   <br />
+                 
                   <h4>Pro</h4>
                   <h6>{renderBillingType().planPrice.price3}</h6>
                   <p>{billingType ? "2 months free" : ""}</p>
+                  
                 </span>
               </label>
             </div>
@@ -145,13 +147,13 @@ const Step2 = () => {
 
           <div>
             <div className={style.toggle}>
-              <h4 style={{ color: billingType && "gray" }}>Yearly</h4>
+              <h5 style={{ color: billingType && "gray" }}>Yearly</h5>
               <input
                 className={style.switch}
                 type="checkbox"
                 onChange={switchPlans}
               />
-              <h4 style={{ color: !billingType && "gray" }}>Monthly</h4>
+              <h5 style={{ color: !billingType && "gray" }}>Monthly</h5>
             </div>
           </div>
 

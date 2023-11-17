@@ -19,7 +19,7 @@ const SideContent = (props) => {
             1
           </h3>
           <div className={classes.texts}>
-            <h5 className={classes.step1}>STEP1</h5>
+            <h6 className={classes.step1}>STEP1</h6>
             <p>YOUR INFO</p>
           </div>
         </section>
@@ -33,7 +33,7 @@ const SideContent = (props) => {
             2
           </h3>
           <div className={classes.texts}>
-            <h5 className={classes.step2}>STEP2</h5>
+            <h6 className={classes.step2}>STEP2</h6>
             <p>SELECT PLANS</p>
           </div>
         </section>
@@ -47,7 +47,7 @@ const SideContent = (props) => {
             3
           </h3>
           <div className={classes.texts}>
-            <h5 className={classes.step3}>STEP3</h5>
+            <h6 className={classes.step3}>STEP3</h6>
             <p>ADD ONS</p>
           </div>
         </section>
@@ -61,7 +61,7 @@ const SideContent = (props) => {
             4
           </h3>
           <div className={classes.texts}>
-            <h5 className={classes.step4}>STEP4</h5>
+            <h6 className={classes.step4}>STEP4</h6>
             <p>SUMMRY</p>
           </div>
         </section>

@@ -8,6 +8,8 @@ import classes from "../step4/step4.module.css";
 import { Link } from "react-router-dom";
 
 const Step4 = () => {
+
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -30,43 +32,50 @@ const Step4 = () => {
             <p>please Check Well To Comfirm Your Options.</p>
           </div>
         </div>
+
         <div>
           <div className={classes.checkbox} data-aos="fade-up">
-            <span>
-              <p>ARCADE(Yearly)</p>
-            </span>
-            <p className={classes.analysis}>+500$/yr</p>
-          </div>
+            <div className={classes.check1}>
+              <span>
+                <p>ARCADE(Yearly)</p>
+                <Link to="/step2" className={classes.change}>change</Link>
+              </span>
+              <p className={classes.analysis}>+500$/yr</p>
+            </div>
 
-          <div className={classes.checkbox} data-aos="fade-up">
             <span>
-              <h4>Large Space</h4>
+              <div className={classes.options}>
+                <h4>Large Space</h4>
+                <p className={classes.analysis}>+35$/m</p>
+              </div>
+              <br />
+              <div className={classes.options}>
+                <h4>Online Service</h4>
+                {/* <p className={classes.gray}>(Total)</p> */}
+                <p className={classes.analysis}>+35$/m</p>
 
-              <h4>Online Service</h4>
-              <p className={classes.gray}>(Total)</p>
+              </div>
             </span>
-            <p className={classes.analysis}>+35$/m</p>
-          </div>
-
-          <div className={classes.checkbox} data-aos="fade-up">
-            <span>
-              <p>Total</p>
-              <p className={classes.gray}>Per(Year)</p>
-            </span>
-            <p className={classes.analysis}>+920$/yr</p>
+           
+            <div className={classes.totals}>
+              <span>
+                <p>Total</p>
+                <p className={classes.gray}>Per(Year)</p>
+              </span>
+              <p className={classes.analysis}>+920$/yr</p>
+            </div>
           </div>
         </div>
-      
 
-      <div className={classes.navbtn3}>
-        <h4 style={{ marginLeft: 45 }}>
-          {" "}
-          <Link to="/step3">Go Back</Link>
-        </h4>
-        <a onClick={confirmChanges}>
-          <button>Confirm</button>
-        </a>
-      </div>
+        <div className={classes.navbtn3}>
+          <h4 style={{ marginLeft: 45 }}>
+            {" "}
+            <Link to="/step3">Go Back</Link>
+          </h4>
+          <a onClick={confirmChanges}>
+            <button>Confirm</button>
+          </a>
+        </div>
       </div>
       {showModal && <Step5 onCancel={closeBackdrop} />}
       {showModal && <BackDrop onCancel={closeBackdrop} />}

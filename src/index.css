@@ -4,17 +4,23 @@
   /* box-sizing: border-box; */
 }
 body{
+  height: 100vh;
+}
+.box{
   background-color: rgb(236, 248, 248);
+  height: 100vh;
+  padding: 10px;
 }
 
 .sub-box{
   width: 750px;
   font-family: "Ubuntu", sans-serif;
-  margin: 2% auto;
+  margin: 0 auto;
   border-radius: 10px;
   display: flex;
-  height: 90vh;
+  height: 94vh;
   justify-content: center;
+  box-shadow: 0 5px 7px rgba(3, 3, 3, 0.2);
   background-color: #fff;
 }
 .container {
@@ -41,6 +47,7 @@ body{
 @media screen and (max-width: 750px) {
   .box{
     height: 90vh;
+    width: 100vw;
   }
   .sub-box{
     display: grid;
@@ -52,6 +59,7 @@ body{
  
   .container{
     width: 250px;
+    height: 100px;
   }
   
 }

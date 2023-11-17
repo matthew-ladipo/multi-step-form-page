@@ -2,6 +2,7 @@ import classes from "../step1/step1.module.css";
 import { useState } from "react";
 import Validate from "./validation/validate";
 import { useNavigate } from "react-router-dom";
+import InputComponent from './InputComponent'
 
 const Step1 = () => {
   const [value, setFormValue] = useState({
@@ -35,7 +36,7 @@ const Step1 = () => {
         <div className={classes.details}>
           <div className={classes.heading}>
             <h1>Personal info</h1>
-            <p style={{ color: "gray" }}>
+            <p style={{ color: "gray", fontSize: '14px',fontWeight: 500 }}>
               Please provide your name, email and phone number
             </p>
           </div>
@@ -70,6 +71,8 @@ const Step1 = () => {
                 <p style={{ color: "red", fontSize: "10px" }}>{error.email}</p>
               )}
             </div>
+            {/* <InputComponent placeholder='Username field'/> */}
+
             <div className={classes.control}>
               <label>Password</label>
               <input
