@@ -126,7 +126,8 @@
     width: 100px;
   }
   .actions{
-    margin: 180px  -115px;
+    margin: 170px  -115px;
+    height: 70px;
    
   }
 }
