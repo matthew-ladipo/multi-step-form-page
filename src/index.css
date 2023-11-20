@@ -18,14 +18,14 @@ body{
   margin: 0 auto;
   border-radius: 10px;
   display: flex;
-  height: 94vh;
+  height: 95vh;
   justify-content: center;
   box-shadow: 0 5px 7px rgba(3, 3, 3, 0.2);
   background-color: #fff;
 }
 .container {
   background-position: center;
-  background-size: cover;
+  /* background-size: cover; */
   position: relative;
 }
 
