@@ -50,7 +50,7 @@ const Step1 = () => {
                 id="title"
                 placeholder="e.g matthew"
                 onChange={handleInput}
-                 style={{  }}
+                 style={{ border: error === true ? '1px solid black' : '' }}
               />
 
               {error.name && (
@@ -66,9 +66,10 @@ const Step1 = () => {
                 id="title"
                 placeholder="e.g adiolumics@gmail.com"
                 onChange={handleInput}
+                
               />
               {error.email && (
-                <p style={{ color: "red", fontSize: "10px" }}>{error.email}</p>
+                <p style={{ color: "red", fontSize: "10px" , fontWeight: 400 }}>{error.email}</p>
               )}
             </div>
             {/* <InputComponent placeholder='Username field'/> */}
@@ -83,7 +84,7 @@ const Step1 = () => {
                 onChange={handleInput}
               />
               {error.password && (
-                <p style={{ color: "red", fontSize: "10px" }}>
+                <p style={{ color: "red", fontSize: "10px" , fontWeight: 400 }}>
                   {error.password}
                 </p>
               )}
