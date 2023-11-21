@@ -44,9 +44,9 @@ body{
     width: 100vw;
   }
   .sub-box{
+    top: 0;
     display: grid;
     width: 375px;
-    /* background-image: url('./image/bg-sidebar-mobile.svg'); */
     height: 170px;
     border-radius: 1px;
     background-repeat: no-repeat;

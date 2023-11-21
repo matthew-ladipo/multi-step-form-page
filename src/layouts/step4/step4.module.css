@@ -108,14 +108,16 @@
     width: 330px;
     z-index: 6;
     top: -58px;
-    background-color: #fff;
     border-radius: 8px;
     margin: 0 25px;
+    padding: 20px 0;
+    background-color: #fff;
+    height: 350px;
     
   }
   .finishing{
     width: 252px;
-    height: 330px;
+    /* height: 330px; */
     margin: 19px 38px;
    
    }
