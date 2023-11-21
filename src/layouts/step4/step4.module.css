@@ -1,5 +1,7 @@
 .finishing {
-  margin: 35px 66px;
+  margin: 45px 66px;
+
+  height: 100%;
 }
 
 .gray {
@@ -46,6 +48,7 @@
   font-size: 14px;
   font-weight: 500;
   margin-top: 5px;
+  height: 100%;
 }
 .totals{
   display: flex;
@@ -104,10 +107,10 @@
     position: relative;
     width: 330px;
     z-index: 6;
-    top: -39px;
+    top: -58px;
     background-color: #fff;
     border-radius: 8px;
-    margin: 0 -40px;
+    margin: 0 25px;
     
   }
   .finishing{
@@ -131,31 +134,11 @@
   }
   .navbtn3{
     width: 360px;
-    margin: 220px -77px;
+    margin: 240px -77px;
   }
   .gray{
     margin: 9px 0;
     margin-bottom: 10px;
   }
-  /* .adds {
-    margin-bottom: 1rem;
-  }
-  .title {
-    margin: 13px 5px;
-  }
-  .title h1{
-    margin-top: 5px;
-  }
-  .navbtn3 {
-   
-  margin: 100px -75px;
-    
-    
-  }
-  .contain4 {
-    display: grid;
-
-  }
   
-} */
 }

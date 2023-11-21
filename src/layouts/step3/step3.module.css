@@ -80,12 +80,12 @@
   .adds {
     background-color: #fff;
     height: 55vh;
-    top: -20px;
+    top: -40px;
     z-index: 5;
     width: 340px;
     border-radius: 10px;
     position: relative;
-    margin: 0 -45px;
+    margin: 0 18px;
     box-shadow: 0 5px 7px rgba(3, 3, 3, 0.2);
   }
   .checkbox {
@@ -113,8 +113,8 @@
   }
   
   .navbtn3{
-    width: 305px;
-    margin: 170px 0;
+    width: 340px;
+    margin: 190px -25px;
   }
   
 }

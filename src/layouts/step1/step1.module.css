@@ -80,7 +80,7 @@
     margin: 25px 0;
     width: 250px;
     margin-left: 28px;
-    /* height: 50px; */
+   
 
   }
   .first{
@@ -89,12 +89,13 @@
   .heading p {
     font-size: 13px;
     width: 200px;
-    /* margin-bottom: 5px; */
+    
+    
   }
   .contain {
     z-index: 6;
-    margin: 0 -35px;
-    top: -20px;
+    margin: 0 28px;
+    top: -45px;
     background: #fbfdfd;
     width: 20rem;
     height: 350px;
@@ -126,7 +127,7 @@
     width: 100px;
   }
   .actions{
-    margin: 170px  -115px;
+    margin: 195px  -115px;
     height: 70px;
    
   }
